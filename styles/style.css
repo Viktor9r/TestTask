@@ -1,0 +1,558 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    width: 93%;
+    max-width: 1320px;
+  }
+}
+.select-container {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.select-container-selector {
+  width: 200px;
+  height: 40px;
+}
+
+.list-header {
+  background-color: #253340;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 4px 4px 0 0;
+  padding: 16px 24px;
+  gap: 20px;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+@media (min-width: 1100px) {
+  .list-header {
+    display: flex;
+  }
+}
+
+.sportsbook {
+  margin: 0;
+  flex: 0.13;
+  min-width: 160px;
+}
+
+.bonus {
+  margin: 0;
+  flex: 0.25;
+}
+
+.rating {
+  margin: 0;
+  flex: 0.11;
+  min-width: 130px;
+  max-width: 130px;
+}
+
+.payout {
+  margin: 0;
+  flex: 0.08;
+  width: 100px;
+}
+
+.benefits {
+  margin: 0;
+  flex: 0.26;
+}
+
+.bet-button {
+  margin: 0;
+  flex: 0.17;
+  min-width: 200px;
+}
+
+.partner-brick {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #f6f6f6;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 15px 0 !important;
+}
+
+.sportsbook-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+}
+@media (max-width: 1100px) and (min-width: 680px) {
+  .sportsbook-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 16px;
+  }
+}
+
+.sportsbook-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid #f6f6f6;
+  border-radius: 4px;
+  margin: 8px 0;
+  padding: 0px 16px 40px 16px;
+  overflow: hidden;
+}
+@media (min-width: 1100px) {
+  .sportsbook-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 24px !important;
+  }
+}
+@media (max-width: 1100px) and (min-width: 680px) {
+  .sportsbook-row {
+    width: calc(50% - 8px);
+  }
+}
+
+.logo-cell {
+  flex: 1;
+  min-height: 70px;
+  max-width: 160px;
+  min-width: 160px;
+  margin: 40px 0 0 0;
+}
+.logo-cell-image {
+  width: 100%;
+}
+@media (min-width: 1100px) {
+  .logo-cell {
+    flex: 0.13;
+    margin: 0;
+    width: 13%;
+    min-height: 0;
+  }
+}
+
+.bonus-cell {
+  margin: 0;
+  margin-bottom: 16px;
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bonus-cell-plate {
+  font-size: 10px;
+  color: #23bf57;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #e3fcef;
+  width: fit-content;
+}
+.bonus-cell-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #15202b;
+  font-weight: 700;
+}
+.bonus-cell-about {
+  font-size: 10px;
+  color: "#727272";
+  line-height: 16px;
+  font-weight: 600;
+}
+@media (min-width: 1100px) {
+  .bonus-cell {
+    flex: 0.25;
+    margin: 0;
+    width: 25%;
+  }
+  .bonus-cell-title {
+    font-size: 24px;
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #f6f6f6;
+  margin-bottom: 16px;
+}
+@media (min-width: 1100px) {
+  .divider {
+    display: none;
+  }
+}
+
+.rating-cell {
+  margin: 0 0 16px 0;
+  flex: 0.11;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.rating-cell-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.rating-cell-container .stars-ratings {
+  display: flex;
+}
+.rating-cell-title {
+  font-size: 10px;
+  color: "#727272";
+  line-height: 16px;
+  font-weight: 600;
+}
+.rating-cell-value {
+  margin: 6px;
+  margin-left: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #15202b;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.rating-cell-icon {
+  width: 26px;
+  height: 26px;
+  fill: #fd5000;
+  margin-right: 4px;
+  transform: scale(1.25);
+}
+.rating-cell-icon--second {
+  background: #e3fcef;
+  border-radius: 50%;
+  margin-right: 4px;
+  transform: scale(1);
+}
+.rating-cell-desktopstars {
+  display: none;
+}
+.rating-cell-link {
+  color: #253341;
+  font-size: 12px;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fd5000;
+  display: none;
+  margin-top: 20px;
+}
+@media (min-width: 1100px) {
+  .rating-cell {
+    flex: 0.11;
+    margin: 0;
+    min-width: 130px;
+    max-width: 130px;
+  }
+  .rating-cell-container {
+    width: 100%;
+  }
+  .rating-cell-container--second {
+    display: none;
+  }
+  .rating-cell-icon {
+    display: none;
+  }
+  .rating-cell-title {
+    display: none;
+  }
+  .rating-cell-value {
+    margin: 0;
+  }
+  .rating-cell-desktopstars {
+    display: block;
+  }
+  .rating-cell-link {
+    display: inline-block;
+  }
+}
+
+.payout-cell {
+  display: none;
+  margin: 0;
+  flex: 0.08;
+  width: 100px;
+  margin-bottom: 30px;
+}
+.payout-cell-icon {
+  width: 26px;
+  height: 26px;
+  background-image: url("../assets/Icons/currency-outlined-icon.png");
+  background-size: contain;
+}
+.payout-cell-value {
+  font-size: 16px;
+  color: #15202b;
+  line-height: 20px;
+  font-weight: 700;
+}
+@media (min-width: 1100px) {
+  .payout-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.benefits-cell {
+  display: none;
+  margin: 0;
+  flex: 0.26;
+}
+.benefits-cell-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.benefits-cell-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #15202b;
+  gap: 6px;
+}
+.benefits-cell-icon {
+  width: 26px;
+  height: 26px;
+}
+@media (min-width: 1100px) {
+  .benefits-cell {
+    display: block;
+  }
+}
+
+.bet-button-cell {
+  width: 100%;
+  margin: 0;
+  flex: 0.17;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bet-button-cell-promo {
+  width: 100%;
+  height: 56px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  color: #15202b;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 2px dashed #fd5000;
+}
+.bet-button-cell-promo-title {
+  font-size: 12px;
+}
+.bet-button-cell-promo-code {
+  font-size: 14px;
+}
+.bet-button-cell-link {
+  width: 100%;
+  height: 40px;
+  background-color: #fd5000;
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+@media (min-width: 1100px) {
+  .bet-button-cell {
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+.number-plate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 7px;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 700;
+  border-radius: 0 0 4px 0;
+  height: 18px;
+}
+.number-plate--first {
+  color: #fff;
+  background: #1a73e8;
+  text-transform: uppercase;
+}
+.number-plate--other {
+  color: #15202b;
+  background: #f6f6f6;
+}
+@media (min-width: 1100px) {
+  .number-plate {
+    top: 8px;
+    left: 12px;
+    border-radius: 4px;
+  }
+}
+
+.dropdown-outer-container {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.dropdown-inner-container {
+  width: 100%;
+}
+@media (min-width: 1100px) {
+  .dropdown-inner-container {
+    width: 230px;
+  }
+}
+
+.dropdown-label {
+  color: #15202b;
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: none;
+}
+@media (min-width: 1100px) {
+  .dropdown-label {
+    display: block;
+  }
+}
+
+.dropdown-toggle {
+  height: 34px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  color: #15202b;
+  background: transparent;
+  border: 1px solid #fd5000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+.dropdown-toggle img {
+  fill: #15202b;
+  width: 15px;
+}
+@media (min-width: 1100px) {
+  .dropdown-toggle img {
+    display: none;
+  }
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+@media (min-width: 1100px) {
+  .dropdown-toggle::after {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1100px) {
+  .dropdown-toggle {
+    width: 230px;
+    border-color: #b6b7bb;
+    height: 38px;
+  }
+}
+
+.dropdown-menu {
+  width: 100%;
+  margin-top: 12px !important;
+  padding: 12px !important;
+  border: none !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu a {
+  font-size: 14px;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid #f6f6f6 !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown-menu a img {
+  width: 20px;
+  height: 20px;
+}
+.dropdown-menu .selected {
+  font-weight: 600;
+}
+
+.rating-stars {
+  --star-size: 22px;
+  --num-stars: 5;
+  width: calc(var(--star-size) * var(--num-stars) + 10px);
+  height: var(--star-size);
+  font-size: var(--star-size);
+  letter-spacing: 2px;
+  line-height: var(--star-size);
+  display: flex;
+  position: relative;
+  background: url("../assets/Icons/star-icon.svg") repeat-x;
+  background-size: contain;
+  margin-bottom: 2px;
+  z-index: -1;
+}
+.rating-stars::before {
+  content: "★★★★★";
+  letter-spacing: 2px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  color: transparent;
+  background: linear-gradient(90deg, #fd5000 var(--percent), #d1d3d4 var(--percent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.white-stars-background {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
